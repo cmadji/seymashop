@@ -165,13 +165,14 @@ body {
 
 .main-container {
   background-color: #d6ddf5;
+  padding-bottom: 170px;
 }
 
 .carousel-container {
   /* border: 1px solid blue; */
   height: 400px;
   margin: 200px;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 50px;
   padding-top: 50px;
 }
@@ -196,6 +197,7 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .catalogue-item {
@@ -217,8 +219,12 @@ body {
   height: 300px;
   /* border: 3px solid black; */
 }
-.catalogue-title {
+/* .catalogue-title {
   border: 1px solid blue;
+} */
+
+.image-title {
+  opacity: 0.8;
 }
 
 .price-icon {
@@ -226,6 +232,10 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
 }
 
 main {
