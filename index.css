@@ -78,6 +78,7 @@ body {
   align-items: center;
   padding-top: 12px;
   padding-bottom: 10px;
+  color: black;
 }
 
 .logo-container {
@@ -129,6 +130,10 @@ body {
 
 .header-panier {
   padding-left: 10px;
+}
+
+.panier-title {
+  color: black;
 }
 
 .nav-choice {
@@ -334,4 +339,8 @@ main {
   height: 25px;
   font-size: 12px;
   border: none;
+}
+
+#subscription {
+  font-size: 12px;
 }
