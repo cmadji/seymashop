@@ -110,6 +110,7 @@ body {
 }
 .connect-label {
   padding-right: 5px;
+  color: black;
 }
 
 .fa-user {
@@ -310,7 +311,7 @@ body {
   width: 100%;
   height: 50px;
   margin-right: 10px;
-  background-color: #23c7c5;
+  background-color: #0234ca;
   border: none;
   font-weight: bold;
   font-size: 18px;
@@ -467,8 +468,13 @@ body {
 }
 
 .button-text {
-  background-color: #23c7c5;
+  background-color: #0234ca;
   height: 25px;
   font-size: 12px;
   border: none;
+  color: white;
+}
+
+#subscription {
+  font-size: 12px;
 }

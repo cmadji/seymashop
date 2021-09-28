@@ -72,8 +72,10 @@
         </a>
         <div class="connect-panier">
           <div class="connect">
-            <span class="connect-label">Connexion</span>
-            <i class="fal fa-user"></i>
+            <a href="./login.html">
+              <span class="connect-label">Connexion</span>
+              <i class="fal fa-user"></i
+            ></a>
           </div>
           <div class="vertical-line"></div>
           <a class="panier-title" href="./cart.html"
@@ -314,10 +316,15 @@
             <input
               type="text"
               placeholder="Votre adresse E-mail"
+              id="email-input"
               class="input-title"
+              required
             />
-            <button class="button-text">S'ABONNER</button>
+            <button type="button" onclick="subscribe()" class="button-text">
+              S'ABONNER
+            </button>
           </form>
+          <span id="subscription"></span>
         </div>
       </div>
 
