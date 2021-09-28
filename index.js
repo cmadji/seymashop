@@ -30,7 +30,9 @@ function selectArticle(articleId) {
   const catalogName = catalogItem.children[1].children[0].innerHTML;
   const catalogPrice =
     catalogItem.children[1].children[1].children[0].innerHTML;
-  const catalogImage = catalogItem.children[0].children[0].getAttribute("src");
+  const catalogImage =
+    catalogItem.children[0].children[0].children[0].getAttribute("src");
+  console.log(catalogItem.children[0].children[0]);
   addArticle({
     id: articleId.substr(3, articleId.length),
     name: catalogName,
