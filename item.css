@@ -109,6 +109,7 @@ body {
 }
 .connect-label {
   padding-right: 5px;
+  color: black;
 }
 
 .fa-user {
@@ -190,8 +191,8 @@ body {
 }
 
 .item-left-image {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 90px;
 }
 
 .item-center {
@@ -216,8 +217,9 @@ body {
 }
 
 .item-image-center {
-  width: 400px;
+  width: 300px;
   height: 400px;
+  margin-left: 50px;
 }
 
 /* .item-chevron {
@@ -257,8 +259,31 @@ body {
   font-weight: bold;
 }
 
+.taille {
+  border: 1px solid rgb(212, 204, 204);
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taille:hover {
+  border: 1px solid black;
+}
+
+.taille:active {
+  background-color: black;
+  color: white;
+}
+
 .item-article-size {
   margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .item-description-title {
@@ -278,6 +303,10 @@ body {
   width: 500px;
   height: 50px;
   margin-right: 10px;
+  background-color: #0234ca;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 .item-button {
@@ -426,8 +455,14 @@ body {
 }
 
 .button-text {
-  background-color: #23c7c5;
+  background-color: #0234ca;
   height: 25px;
   font-size: 12px;
   border: none;
+  cursor: pointer;
+  color: white;
+}
+
+#subscription {
+  font-size: 12px;
 }

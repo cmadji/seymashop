@@ -45,7 +45,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
-
+    <script src="./index.js"></script>
     <title>Article</title>
   </head>
   <body>
@@ -72,8 +72,10 @@
         </a>
         <div class="connect-panier">
           <div class="connect">
-            <span class="connect-label">Connexion</span>
-            <i class="fal fa-user"></i>
+            <a href="./login.html">
+              <span class="connect-label">Connexion</span>
+              <i class="fal fa-user"></i
+            ></a>
           </div>
           <div class="vertical-line"></div>
           <a class="panier-title" href="./cart.html"
@@ -139,14 +141,14 @@
     <div class="item-container">
       <div class="item-left">
         <div class="item-left-1">
-          <img class="item-left-image" src="./images/item-left-1.jpg" />
+          <img class="item-left-image" src="./images/pantalon_homme.png" />
         </div>
         <div class="item-left-1">
-          <img class="item-left-image" src="./images/item-left-1.jpg" />
+          <img class="item-left-image" src="./images/pantalon_homme_dos.png"/>
         </div>
 
         <div class="item-left-1">
-          <img class="item-left-image" src="./images/item-left-1.jpg" />
+          <img class="item-left-image" src="./images/pantalon_homme_taille.png"/>
         </div>
       </div>
       <div class="item-center">
@@ -154,7 +156,7 @@
           <i class="far fa-chevron-left"></i>
         </div>
         <div class="item-image">
-          <img class="item-image-center" src="./images/item-left-1.jpg" />
+          <img class="item-image-center" src="./images/pantalon_homme.png"/>
         </div>
         <div class="item-chevron-right">
           <i class="far fa-chevron-right"></i>
@@ -163,29 +165,31 @@
       <div class="item-right">
         <div class="item-bloc-1">
           <div class="item-article-name">
-            <span class="item-title"
-              >SeymaShop Robe en maille gaufrée avec plis et nœud</span
-            >
+            <span class="item-title">Homme Pantalon de survêtement lettre</span>
           </div>
           <div class="item-article-price">
-            <span class="item-price">DH65.00</span>
+            <span class="item-price">150DH</span>
           </div>
           <div class="item-article-size">
-            <span class="item-size">Taille</span>
+            <span class="item-size">Taille :</span>
+            <div class="taille">S</div>
+            <div class="taille">M</div>
+            <div class="taille">L</div>
+            <div class="taille">XL</div>
+            <div class="taille">XXL</div>
           </div>
         </div>
         <div class="item-bloc-2">
           <div class="item-description">
             <span class="item-description-title">Description</span>
             <br />
-            <span class="item-description-text"
-              >La Reina Azteca Palette, c’est huit teintes exclusives aux
-              finitions multiples sexy, chaudes et épicées digne d’une reine.
-              Soyeuses et lisses, les teintes riches et très pigmentées offrent
-              un vrai rendu de couleur et se fondent sans effort. 8 teintes aux
-              finitions multiples, une combinaison de couleurs inspirée de la
-              Reina Azteca, parfaite pour des looks de tous les jours. Palette
-              qui s’emporte facilement avec soi.</span
+            <Type class="item-description-text"
+              >Couleur: Noir <br> Type de motif: Lettres,  <br> Floral détails: Poche,  
+              Cordon  <br> Saison: Tout  <br> Type de fermeture: Cordon à la taille  <br> Tour de
+              taille: Naturel  <br> Longueur: Long  <br> Type d'ajustement: Coupe régulière  <br>
+              Tissu: Extensibilité légère  <br> Tissu/matériel: Polyester  <br> Composition:
+              65% Polyester, 35% Coton  <br> Instructions d'entretien: Lavage en
+              machine ou nettoyage à sec professionnel  <br> Transparent: Non</span
             >
           </div>
           <div class="item-button">
@@ -273,10 +277,15 @@
             <input
               type="text"
               placeholder="Votre adresse E-mail"
+              id="email-input"
               class="input-title"
+              required
             />
-            <button class="button-text">S'ABONNER</button>
+            <button type="button" onclick="subscribe()" class="button-text">
+              S'ABONNER
+            </button>
           </form>
+          <span id="subscription"></span>
         </div>
       </div>
 
