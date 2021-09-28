@@ -110,6 +110,7 @@ body {
 }
 .connect-label {
   padding-right: 5px;
+  color: black;
 }
 
 .fa-user {
@@ -205,11 +206,25 @@ body {
   margin-top: 100px;
 }
 
+.catalogue-adding-button {
+  border: none;
+  background-color: #0234ca;
+  color: white;
+  cursor: pointer;
+}
+
+.catalogue-adding-button:active {
+  border: none;
+  background-color: #02299c;
+  color: white;
+  cursor: pointer;
+}
+
 .catalogue-item {
   width: 200px;
   height: 300px;
   margin: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .catalogue-image {
@@ -230,6 +245,7 @@ body {
 
 .image-title {
   opacity: 0.8;
+  color: black;
 }
 
 .price-icon {
@@ -241,6 +257,7 @@ body {
 
 .price {
   font-weight: bold;
+  color: black;
 }
 
 main {
@@ -335,10 +352,11 @@ main {
 }
 
 .button-text {
-  background-color: #23c7c5;
+  background-color: #0234ca;
   height: 25px;
   font-size: 12px;
   border: none;
+  color: white;
 }
 
 #subscription {
